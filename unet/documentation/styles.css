@@ -1,0 +1,109 @@
+h0 { font-size:200%;
+     color:#000000;
+     font-weight:bold;
+     font-family:Helvetica,Arial,sans-serif;}
+
+h0.navi { font-size:100%;
+          color:#000000;
+          font-weight:bold;
+          font-family:Helvetica,Arial,sans-serif;}
+
+h1 { font-size:150%;
+     color:#000000;
+     font-weight:bold;
+     font-family:Helvetica,Arial,sans-serif;}
+
+
+h1.navi { font-size:90%;
+          color:#000000;
+          font-weight:bold;
+          font-family:Helvetica,Arial,sans-serif;}
+
+h2 { font-size:130%;
+     color:#000000;
+     font-weight:bold;
+     font-family:Helvetica,Arial,sans-serif;}
+
+h2.navi { font-size:90%;
+          color:#000000;
+          font-weight:bold;
+          font-family:Helvetica,Arial,sans-serif;}
+
+h3 { font-size:100%;
+     color:#000000;
+     font-weight:bold;
+     font-family:Helvetica,Arial,sans-serif;}
+
+h3.navi { font-size:90%;
+          color:#000000;
+          font-weight:bold;
+          font-family:Helvetica,Arial,sans-serif;}
+
+p {  color:#000000;
+     font-family:Helvetica,Arial,sans-serif;}
+
+a { font-family:Helvetica,Arial,sans-serif; }
+
+a.navi { font-size:90%;
+         font-family:Helvetica,Arial,sans-serif; }
+
+
+div.bold {  color:#000000;
+          font-family:Helvetica,Arial,sans-serif;
+          font-weight:bold;
+          font-size:100%; }
+
+
+div.bold_navi {  color:#000000;
+          font-family:Helvetica,Arial,sans-serif;
+          font-weight:bold;
+          font-size:90%; }
+
+div.title { 
+  width: 100%;
+  background-color: #eeeeff;
+  font-family:sans-serif;
+  font-size:large;
+  font-weight:regular;
+  border: 4px solid #eeeeff;
+  text-align: left;
+  margin-top: 2px
+  margin-bottom: 2px
+}
+
+hr { width: 100%;
+     align:left }
+
+
+table.filesyntax { 
+  background-color:#FFFFE0; 
+  border: 1px solid;
+  vertical-align: top;
+  padding: 3 
+}
+
+tbody.filesyntax { 
+  vertical-align: top;
+}
+
+table.appcontents { 
+  border-style: none;
+  vertical-align: top;
+  padding: 2;
+}
+
+tbody.appcontents { 
+  background-color:#eeeeff; 
+}
+
+table.appusage { 
+  border-style: none;
+  vertical-align: top;
+  text-align: left;
+  padding: 3;
+}
+
+pre { font-family:"Courier New",Courier; font-size:13.4px; color:#0000C0; background-color:#FFFFE0; border:10px solid #EEEEEE; padding:10px; white-space:pre; width:75%}
+
+.reg { color:#000000;
+     font-family:Helvetica,Arial,sans-serif }

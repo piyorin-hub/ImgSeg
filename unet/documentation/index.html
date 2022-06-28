@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>Daimler Stereo Pedestrian Segmentation Benchmark</title>
+
+
+
+
+
+  
+    
+    <link rel="stylesheet" type="text/css" href="styles.css"></head><body>
+    <h1>PedCut Benchmark Dataset</h1>
+    <hr>
+    
+    <div class="title">Fabian Flohr and Dariu M. Gavrila<br>August 16, 2013<br>
+      (C) 2013 by Daimler AG
+    </div>
+
+    <hr>
+
+    <h2>Contents</h2>
+    <ol> 
+      <li class="h3"><a href="#introduction">Introduction</a>
+      </li><li class="h3"><a href="#license">License Agreement</a>
+      </li><li class="h3"><a href="#datasets">Dataset</a>
+      </li><li class="h3"><a href="#Camera_Parameters">Camera Parameters</a>
+      </li><li class="h3"><a href="#benchmarking">Benchmarking Procedure</a>
+      </li><li class="h3"><a href="#Literature">Literature</a>
+      </li><li class="h3"><a href="#contact">Contact</a>
+    </li></ol>
+
+    <hr>
+    
+    <a name="introduction"></a>
+    <h2>Introduction</h2>
+    <p>
+      This README describes the PedCut Benchmark Dataset introduced
+      in the publication
+    </p>
+    
+<p>F. Flohr and D. M. Gavrila. <b>PedCut: an iterative framework for pedestrian segmentation combining<br>
+shape models and multiple data cues,</b><span style="font-style: italic;"> British Machine Vision Conference (BMVC)</span><i> 2013</i>
+    </p>
+
+    <p>This dataset contains a compilation of pedestrian cutouts
+including disparity information and ground truth annotations. It is
+made publicly available to
+academic and non-academic entities for research purposes. </p>
+
+
+    <hr>
+
+
+    <a name="license"></a>
+    <h2>License Agreement</h2>
+    <p>
+      This dataset is made freely available to academic and non-academic entities for 
+      research purposes such as academic research, teaching, scientific publications,
+      or personal experimentation. Permission is granted to use, copy, and distribute
+      the data given that you agree:     
+    </p>
+    <ol>
+      <li>
+	That the dataset comes "AS IS", without express or implied warranty.
+	Although every effort has been made to ensure accuracy, Daimler 
+	does not accept any responsibility for errors or omissions.
+      </li>
+
+      <li>
+	That you include a reference to the above publication in any published work
+	that makes use of the dataset.
+      </li>
+
+      <li>
+	That if you have altered the content of the dataset or created derivative
+	work, prominent notices are made so that any recipients know that they are
+	not receiving the original data.
+      </li>
+
+      <li>
+	That you may not use or distribute the dataset or any derivative work for
+	commercial purposes as, for example, licensing or selling the data, or
+	using the data with a purpose to procure a commercial gain.
+      </li>
+
+      <li>
+	That this license agreement is retained with all copies of the dataset.
+      </li>
+
+      <li>
+	That all rights not expressly granted to you are reserved by
+	Daimler.
+      </li>
+    </ol>
+   
+   
+
+
+    <hr>
+
+
+    <a name="datasets"></a>
+    <h2>Dataset</h2>
+    
+<p>This dataset contains a collection of 785 pedestrian cutouts from
+228 images (1176x640 pixels) captured with a stereo camera from on-board a vehicle. <br>
+</p>
+<p>For each cutout we provide a 24 bit png color image, disparity
+values (comma separated float values) and a ground truth annotation in
+form of a 1 bit png image (0=background, 1(255)=pedestrian).</p>
+<p>To avoid negative border effects we provide the cutouts extended by
+10% of width (of the original bounding box) to the left and right, and
+10% of height (of the original bounding box) to the top and bottom.<br>
+</p>
+
+<p>Sequences are split into test, validation and complete data. Be
+aware that we used only the test and validation data in our
+publication! For installation, simply extract the provided <i>.tar.gz</i> archives. This will create the folders </p><pre>data/testData (contains all used cutouts for testing, 300 cutouts bigger than 120 pixels in height)<br></pre> <pre>data/validationData (contains all used cutouts for validation, 30 cutouts bigger than 120 pixels in height)</pre>
+  <p></p>
+<pre>data/completeData (contains the whole dataset, 785 cutouts).<br></pre>
+
+   
+    <p></p>
+
+    <hr>
+
+    <h2><a name="Camera_Parameters"></a></h2>
+<h2>Camera Parameters</h2>
+
+    Provided images have been rectified. Camera parameters necessary to project from 2D to 3D are described in the file:
+    <pre>calibration/camera_parameters.txt</pre>
+    
+    
+<p>
+The camera is mounted inside the vehicle below the rear view mirror.
+The world coordinate system origin is below the rear axis of the
+vehicle on the ground-plane. x is pointing to the right, y is pointing
+up and z is pointing towards the driving direction. The camera is 1.2m
+above the ground and 1.9m behind the front of the vehicle. Distance of
+the camera to the rear axis is 1.8m.<br>
+</p>
+
+<hr>
+    
+    <a name="benchmarking"></a>
+    <h2>Benchmarking Procedure</h2>
+    
+<p>Authors who wish to evaluate pedestrian segmentation on this dataset are encouraged
+      to follow the benchmarking procedure and criteria as detailed in the publication given
+      above. <br>
+We use the intersection/union criterium of the PASCAL VOC challenge [2].<br>
+ 
+    </p>
+
+    <p>
+      The original authors would like to hear about other publications that
+      make use of the benchmark data set in order to include corresponding 
+      references on the benchmark website.<br>
+
+
+</p>
+<hr>
+    
+    
+<h2><a name="Literature"></a></h2>
+<h2>Literature</h2>
+[1] F. Flohr, D. M. Gavrila. PedCut: an iterative framework for pedestrian segmentation combining<br>
+
+shape models and multiple data cues, British Machine Vision Converence (BMVC), 2013. <br>
+<br>
+[2] M. Everingham, L. Van Gool, C. K. Williams, J. Winn, and A. Zisserman. The PAS- <br>
+CAL Visual Object Classes (VOC) Challenge. International Journal of Computer Vi- <br>
+sion, 88(2):303&#8211;338, 2010. <br>
+<br>
+<hr>
+    
+    <a name="contact"></a>
+    <h2>Contact</h2>
+    <p>
+      Please direct questions regarding the dataset and benchmarking procedure to <a href="mailto:fabian.flohr@gmail.com">Fabian Flohr</a> or&nbsp; <a href="http://www.gavrila.net" target="_blank">Prof. Dr. Dariu Gavrila</a><a>
+    </a></p>
+<a>  </a></body></html>

@@ -1,0 +1,46 @@
+# Camera parameters
+
+# The camera is mounted inside the vehicle below the rear view mirror.
+# The world coordinate system origin is below the rear axis of the vehicle
+# on the ground-plane. x is pointing to the right, y is pointing up and z
+# is pointing towards the driving direction.
+
+# The camera is 1.2m above the ground and 1.9m behind the front of the vehicle.
+# Distance of the camera to the rear axis is 1.8m. 
+
+# camera height (meters) above ground in
+camera_height 1.2
+
+# longitudinal camera offset (meters) from the front of the vehicle 
+camera_offset_long 1.9
+
+# camera tilt angle (radians)
+tilt_angle -0.028
+
+# camera yaw angle (radians)
+yaw_angle -0.0117
+
+# camera roll angle (radians)
+roll_angle 0.0002
+
+# distance of cameras (meters)
+distance_of_cameras 0.22
+
+#distance of each camera to the vehicle centerline (meters)
+distance_of_camera_to_center = 0.11
+
+# focal length in meters
+focal_length 0.0124
+
+# effective pixel size in meters
+pixel_size 0.00001
+
+# image width in pixels
+image_width 1176
+
+# image height in pixels
+image_height 640
+
+# principle point coordinates in pixels
+principle_point_x 579
+principle_point_y 212
